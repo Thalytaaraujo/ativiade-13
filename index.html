@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> relogio </title>
+    <link rel="stylesheet" href="index.css">
+
+<body>
+  
+ <div class="center" id="real-clock" style="width: 600px;height: 100px; background-color: rgba(190, 91, 66, 0.459); font-size:100px; text-align: center;"></div>  
+ <br><br>
+ <img class="displayed" src ="C:\Users\Tata\Pictures\foto-do-mar.jpg" alt="praia" width="620" height="333" >
+<h1 style="text-align: center;" >TENHA UMA BOA SEMANA </h1>
+
+
+</body>
+
+<script>var clock = document.getElementById('real-clock');
+    
+
+        setInterval(function () {
+            clock.innerHTML = ((new Date).toLocaleString().substr(11, 8));  
+        }, 1000);
+                   
+        </script>
+</html>
